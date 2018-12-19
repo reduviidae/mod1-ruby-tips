@@ -22,4 +22,16 @@ def palindrome_bonus(string)
 
 end
 
+def palindrome_super_bonus(string)
+  i = 0
+  result = true
+  while i < string.length
+    if string[i] != string[-(i+1)]
+      result = false
+    end
+    i += 1
+  end
+  result
+end
+
 binding.pry
