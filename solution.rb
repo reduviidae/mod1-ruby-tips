@@ -5,6 +5,7 @@ def palindrome?(string)
   string == backwards
 end
 
+# only works up to 6 characters
 def palindrome_bonus(string)
   if string[-1] == string[0]
     if string[-2] == string[1]
